@@ -1,0 +1,21 @@
+
+h1, h2 {
+    text-align:center;
+}
+.text {
+    text-align:justify;
+    color: red;
+}
+.annotation{
+    font-style: italic;
+}
+
+table.normal {
+    border-bottom: 1px solid black; 
+    border-right: none; 
+    border-bottom: none;
+}
+table.normal tr td { border-bottom: 1px solid black; border-right:1px solid black}
+table.normal thead { text-align:center; font-weight:bold}
+table.normal caption { text-align:right}
+dt.terms { font-style:italic; font-weight:bold}
