@@ -1,0 +1,41 @@
+form#registration {
+ background: red;
+ counter-reset: fieldsets;
+ padding: 20px;
+ width: 400px;
+}
+form#registration fieldset {
+ border: none;
+ margin-bottom: 10px;
+}
+form#registration legend {
+ color: #000000;
+ font-size: 24px;
+ font-weight: bold;
+ padding-bottom: 10px;
+ text-shadow: 0 1px 1px #C1F7FF;
+}
+form#registration label {
+ float: left;
+ font-size: 16px;
+ width: 110px;
+ }
+ form#registration fieldset label {
+ background:none no-repeat left 50%;
+ line-height: 20px;
+ padding: 0 0 0 30px;
+ width: auto;
+ }
+ form#registration button {
+ background: Green;
+ border: none;
+ border-radius: 20px;
+ color: #red;
+ display: block;
+ font: 18px Georgia, "Times New Roman", Times, serif;
+ letter-spacing: 1px;
+ margin: auto;
+ padding: 7px 25px;
+ text-shadow: 0 1px 1px #C1F7FF;
+ text-transform: uppercase;
+ }
