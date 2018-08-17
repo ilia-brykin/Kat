@@ -1,0 +1,64 @@
+#albums
+{
+    float: left;
+}
+#tracks
+{
+  float: left;  
+}
+#audioPanel
+{
+    clear: left;
+}
+#albumform
+{
+    width:350px;
+}
+#audio
+{
+    width: 100%;
+}
+a.albumlink:hover
+{
+    cursor: pointer;
+    font-style: italic;
+    font-weight: bolder;
+}
+#playlistpanel
+{
+    border: 3px double black;
+}
+#target
+{
+  width:800px;
+  height:600px;
+  border:0px;
+}
+a.listenlink
+{
+    margin: 10px;
+}
+a.addtoPLlink:hover, a.listenlink:hover
+{
+    cursor: pointer;
+    font-style: italic;
+    font-weight: bolder;
+}
+#albumtracks
+{
+    width: 500px;
+}
+li.PL:hover
+{
+    background-color:blue ;
+    cursor: pointer;
+    color: white;
+}
+body
+{
+    background-color: scrollbar;
+}
+h1
+{
+    text-align: center;
+}
