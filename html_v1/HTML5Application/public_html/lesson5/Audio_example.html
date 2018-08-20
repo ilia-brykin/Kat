@@ -24,14 +24,63 @@ and open the template in the editor.
                     <legend class="singer">Слот</legend>
                     <ul class="albumname">
                         <!--<li><a class="albumlink" onclick="loadAlbum('RC_hitstheroad.html')>Шестой</a></li>-->
-                        <li><a class="albumlink" onclick="loadAlbum('Audio_example.html')" href="javascript://">Шестой</a></li>
+                        <li><a class="albumlink"  href="javascript://">Шестой</a></li>
+                    </ul>
+                </fieldset>
+            </form>
+            <form>
+                <fieldset>
+                    <legend class="singer">Playlist</legend>
+                    <ul id="playlist">
+
                     </ul>
                 </fieldset>
             </form>
         </div>
         <div id="tracks">
-            <iframe id="target" src="./lesson5.html"></iframe>
+            <form id="albumtracks">
+                <fieldset>
+                    <legend id="albumname">Шестой</legend>
+                    <!--Änderuneg-->
+                    <img id="poster" src="./../../../../audio/Шестой.jpg">
+                    <!--//Änderuneg//-->
+                    <table>
+                        <tr>
+                            <td>1-Побег</td>
+                            <td><a class="addtoPLlink" onclick="addtoPL('1-Побе', './../../../../audio/slot/1.mp3');">Add to playlist</a></td>
+                            <td><a class="listenlink" onclick="testListen('./../../../../audio/slot/1.mp3');">Listen</a></td>
+                        </tr>
+                        <tr>
+                            <td>2-Бой</td>
+                            <td><a class="addtoPLlink" onclick="addtoPL('2-Бой', './../../../../audio/slot/2.mp3');">Add to playlist</a></td>
+                            <td><a class="listenlink" onclick="testListen('./../../../../audio/slot/2.mp3');">Listen</a></td>
+                        </tr>
+                        <tr>
+                            <td>3-Если</td>
+                            <td><a class="addtoPLlink" onclick="addtoPL('3-Если', './../../../../audio/slot/3.mp3');">Add to playlist</a></td>
+                            <td><a class="listenlink" onclick="testListen('./../../../../audio/slot/3.mp3');">Listen</a></td>
+                        </tr>
+                        <tr>
+                            <td>4-Сочи</td>
+                            <td><a class="addtoPLlink" onclick="addtoPL('4-Сочи', './../../../../audio/slot/4.mp3');">Add to playlist</a></td>
+                            <td><a class="listenlink" onclick="testListen('./../../../../audio/slot/4.mp3');">Listen</a></td>
+                        </tr>
+                        <tr>
+                            <td>5-Old School</td>
+                            <td><a class="addtoPLlink" onclick="addtoPL('5-Old School', './../../../../audio/slot/5.mp3');">Add to playlist</a></td>
+                            <td><a class="listenlink" onclick="testListen('./../../../../audio/slot/5.mp3');">Listen</a></td>
+                        </tr>
+                        <tr>
+                            <td>6-Поколено</td>
+                            <td><a class="addtoPLlink" onclick="addtoPL('6-Поколено', './../../../../audio/slot/6.mp3');">Add to playlist</a></td>
+                            <td><a class="listenlink" onclick="testListen('./../../../../audio/slot/6.mp3');">Listen</a></td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </form>
 
         </div>
+
+        <audio id="audio"></audio>
     </body>
 </html>
