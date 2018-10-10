@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Псевдоклассы дочерних элементов</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            a:first-child{
+             
+                color: red;
+            }
+            a:last-child{
+             
+                color: blue;
+            }
+            p:only-child{
+                color: green;
+            }
+            h5:only-of-type{
+                color: yellow;
+            }
+            tr:nth-child(odd) { 
+                background-color: #bbb; 
+            } /*нечетные*/
+            tr:nth-child(even) {
+                background-color: #fff; 
+            } /*четные*/
+            tr:nth-last-child(2n+1){
+                color: red;
+            }
+            tr:nth-of-type(3){
+                color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="../title.html">Элемент title</a>
+        <h3>Планшеты</h3>
+        <div>
+            <a>Microsoft Surface Pro 4</a><br/>
+            <a>Apple iPad Pro</a><br/>
+            <a>ASUS ZenPad Z380KL</a>
+        </div>
+        <h3>Смартфоны</h3>
+        <div>
+            <h5>Топ-смартфоны 2016</h5>
+            <a>Samsung Galaxy S7</a><br/>
+            <a>Apple iPhone SE</a><br/>
+            <a>Huawei P9</a>
+        </div>
+        <div>
+            <p>Текст1</p>
+        </div>
+         <h3>Смартфоны</h3>
+        <table>
+            <tr><td>Samsung</td><td>Galaxy S7 Edge</td><td>60000</td></tr>
+            <tr><td>Apple</td><td>iPhone SE</td><td>39000</td></tr>
+            <tr><td>Microsoft</td><td>Lumia 650</td><td>13500</td></tr>
+            <tr><td>Alcatel</td><td>Idol S4</td><td>30000</td></tr>
+            <tr><td>Huawei</td><td>P9</td><td>60000</td></tr>
+            <tr><td>HTC</td><td>HTC 10</td><td>50000</td></tr>
+            <tr><td>Meizu</td><td>Pro 6</td><td>40000</td></tr>
+            <tr><td>Xiaomi</td><td>Mi5</td><td>35000</td></tr>
+        </table>
+    </body>
+</html>

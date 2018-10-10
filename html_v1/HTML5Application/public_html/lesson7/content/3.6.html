@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Элементы для ввода цвета, url, email, телефона в HTML5</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <a href="../title.html">Элемент title</a>
+        <form>
+            <label for="favcolor">Выберите цвет</label>  
+            <input type="color" id="favcolor" name="favcolor" list="colors">
+            <datalist id="colors">
+                <option value="#0000FF" label="blue"></option>
+                <option value="#008000" label="green"></option>
+                <option value="#FF0000" label="red"></option>
+            </datalist>
+        </form>
+        <form>
+            <p>
+                <label for="email">Email:</label>
+                <input type="email" placeholder="user@gmail" name="email" id="email">
+            </p>
+            <p>
+                <label for="url">URL:</label>
+                <input type="url" name="url" id="url">
+            </p>
+            <p>
+                <label for="phone">Телефон:</label>
+                <input type="tel" placeholder="(XXX)-XXX-XX-XX" name="phone" id="phone">
+            </p>
+            <p>
+                <button type="submit">Отправить</button>
+            </p>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Элемент select в HTML5</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <a href="../title.html">Элемент title</a>
+        <form method="get">
+            <p>
+                <label for="phone">Выберите модель:</label>
+                <select multiple id="phone" name="phone">
+                    <option disabled selected>Выбирете модель:</option>
+                    <optgroup label="Apple">
+                        <option value="iphone 6s">iPhone 6S</option>
+                        <option value="iphone 6s plus">iPhone 6S Plus</option>
+                        <option value="iphone 5se">iPhone 5SE</option>
+                    </optgroup>
+                    <optgroup label="Microsoft">
+                        <option value="lumia 950">Lumia 950</option>
+                        <option value="lumia 950 xl">Lumia 950 XL</option>
+                        <option value="lumia 650">Lumia 650</option>
+                    </optgroup>
+                    <option value="nexus 5x">Nexus 5X</option>
+                    <option value="galaxy s7" selected>Galaxy S7</option>
+                </select>
+            </p>
+            <p>
+                <input type="submit" value="Отправить">
+            </p>
+        </form>
+    </body>
+</html>

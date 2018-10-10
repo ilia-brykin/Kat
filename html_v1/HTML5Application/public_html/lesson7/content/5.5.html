@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Селекторы элементов одного уровня</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            h2+div { 
+                color: red; 
+            }
+            h2~p { 
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="../title.html">Элемент title</a>
+        <h2>Заголовок</h2>
+        <div>
+            <p>Текст первого блока</p>
+        </div>
+        <div>
+            <p>Текст второго блока</p>
+        </div>
+        <p>Если нам надо стилизовать вообще все смежные элементы одного уровня, неважно непосредственно идут они после определенного элемента или нет,</p>
+        <p>то в этом случае вместо знака плюса необходимо использовать знак тильды "~"</p>
+    </body>
+</html>

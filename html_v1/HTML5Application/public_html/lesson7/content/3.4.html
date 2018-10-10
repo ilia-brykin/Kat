@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Числовое поле в HTML5</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <a href="../title.html">Элемент title</a>
+        <form>
+            <p>
+                <label for="age">Возраст:</label>
+                <input type="number" size="1" min="1" max="100" id="age" name="age" value="10">
+            </p>
+            <p>
+                <button type="submit">Отправить</button>
+            </p>
+        </form>
+        <form>
+            <p>
+                <label for="price">Цена:</label>
+                <input type="number" list="priceList" size="1000" min="3000" max="100000" id="price" name="price" value="10000">
+            </p>
+            <p>
+                <button type="submit">Отправить</button>
+            </p>
+        </form>
+        <datalist id="priceList">
+            <option value="12000"></option>
+            <option value="20000"></option>
+            <option value="25000"></option>
+        </datalist>
+        <p>или</p>
+        <form>
+            <p>
+                <label for="price">Цена:</label>
+                1<input type="range" size="1" min="0" max="100" value="10" id="price" name="price">100
+            </p>
+            <p>
+                <button type="submit">Отправить</button>
+            </p>
+        </form>
+    </body>
+</html>

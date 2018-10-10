@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Текстовые поля в HTML5</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <a href="../title.html">Элемент title</a>
+        <form>
+            <p><input list="phonesList" type="text" name="model" placeholder="Введите модель"></p>
+            <p>
+                <button type="submit">Отправить</button>
+            </p>
+        </form>
+        <datalist id="phonesList">
+            <option value="iPhone 6S"></option>
+            <option value="Lumia 950"></option>
+            <option value="Nexus 5X"></option>
+        </datalist>
+        
+        <form>
+            <input type="search" name="term">
+            <input type="submit" value="Поиск">
+        </form>
+    </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Псевдоклассы</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            a:link    {
+                color:blue; text-decoration:none
+            }
+            a:visited {
+                color:pink; text-decoration:none
+            }
+            a:hover   {
+                color:red; text-decoration:underline
+            }
+            a:active  {
+                color:yellow; text-decoration:underline
+            }
+            input:hover {
+                border:2px solid red;
+            }
+            a:not(.blackLink) {
+                color:black;
+            }    /* тут наоборот почему-то*/
+            :lang(ru) {
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="../title.html">Элемент title</a>
+        <a href="../title.html" class="blackLink">Учебник по CSS3</a>
+        <input type="text" />
+        <form>
+            <p lang="ru-RU">Я изучаю CSS3</p>
+            <p lang="en-US">I study CSS3</p>
+            <p lang="de-DE">Ich lerne CSS3</p>
+        </form>
+    </body>
+</html>

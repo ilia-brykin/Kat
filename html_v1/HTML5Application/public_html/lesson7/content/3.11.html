@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Валидация в HTML5</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <a href="../title.html">Элемент title</a>
+        <form method="get">
+            <p>
+                <label for="login">Логин:</label>
+                <input type="text" name="login" id="login" required>
+            </p>
+            <p>
+                <label for="password">Пароль:</label>
+                <input type="password" name="password" id="password" required>
+            </p>
+            <p>
+                <label for="age">Возраст:</label>
+                <input type="number" name="age" id="age" min="1" max="100" value="18">
+            </p>
+            <p>
+                <label for="phone">Телефон:</label>
+                <input type="text" placeholder="+1-234-567-8901" pattern="\+\d-\d{3}-\d{3}-\d{4}" name="phone" id="phone">
+            </p>
+            <p>
+                <input type="submit" value="Отправить" formnovalidate>
+            </p>
+        </form>
+    </body>
+</html>
