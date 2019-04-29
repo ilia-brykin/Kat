@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Фиксированное позиционирование</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body{ 
+                margin:0;
+                padding:0;
+            }
+            .toolbar{
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                background-color: #222;
+                border-bottom: 1px solid #ccc;
+            }
+            .toolbar a{
+                color: #eee;
+                display: inline-block;
+                padding: 10px;
+                text-decoration: none;
+                font-family: Verdana;
+            }
+            .content{
+                margin-top: 50px;
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="toolbar">
+            <a href="#">Главная</a>
+            <a href="#">Блог</a>
+            <a href="#">Контакты</a>
+            <a href="#">О сайте</a>
+        </div>
+        <div class="content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            Lorem Ipsum has been the industry....</div>
+        <a href="../title.html">Элемент title</a>
+    </body>
+</html>

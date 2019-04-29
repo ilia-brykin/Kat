@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Выравнивание столбцов по высоте</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body, h2, p{
+                margin:0;
+                padding:0;
+            }
+            body{
+                font-size: 18px;
+            }
+            #header{ 
+                background-color: #eee;
+                border-bottom: 1px solid #ccc;
+                height: 80px;
+            }
+            #menu{
+                background-color: #ddd;
+                float: left;
+                width: 150px;
+            }
+            #main{
+                background-color: #f7f7f7;
+                border-left: 1px solid #ccc;
+                margin-left: 150px;
+                padding: 10px;
+            }
+            #footer{ 
+                border-top: 1px solid #ccc;
+                background-color: #dedede;
+            }
+            #wrapper{
+                background-color: #ddd;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="../title.html">Элемент title</a>
+        <div id="header">
+            <h2>Сайт MySyte.com</h2>
+        </div>
+        <div id="wrapper">
+            <div id="menu">
+                <ul>
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Блог</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">О сайте</a></li>
+                </ul>
+            </div>
+            <div id="main">
+                <h2>What is Lorem Ipsum?</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum 
+                    has been the industry...
+                    Наиболее распространенным решением данной проблемы является оборачивание плавающего 
+                    элемента и блока, его обтекающего, в отдельный элемент, у которого устанавливается фон.
+                    Затем этот фон используется наименьшим по длине блоком. В итоге получается иллюзия, что
+                    блоки имеют равную длину, а фон у блоков установлен корректно.</p>
+            </div>
+        </div>
+        <div id="footer">
+            <p>Copyright © MySyte.com, 2016</p>
+        </div>
+    </body>
+</html>

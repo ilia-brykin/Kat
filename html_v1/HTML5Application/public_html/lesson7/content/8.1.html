@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Трансформации</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .overflow{
+                overflow-x: scroll;
+                white-space: nowrap;
+                width: 1000px;
+                height: 400px;
+                background-color: white;
+            }
+            div{
+                background-color: #ccc;
+                width: 120px;
+                height: 120px;
+                margin:5px;
+                padding: 40px 10px;
+                box-sizing: border-box;
+                border: 1px solid #333;
+                display: inline-block;
+            }
+            .rotated{
+                transform: rotate(30deg);
+            }
+            .doubleScale{
+                transform: scale(2);
+            }
+            .halfScale{
+                transform: scale(0.5);
+            }
+            .scale1{
+                transform: scale(2, 0.5);
+            }
+            .scale2{
+                transform: scaleX(-1);
+            }
+            .translated{
+                transform: translate(50px, 30px);
+                background-color:red;
+            }
+            .skewed{
+                transform: skew(30deg, 10deg);
+                background-color:red;
+            }
+            .transform1{
+                transform: rotate(-45deg);
+            }
+            .transform2{
+                transform-origin: left top;
+                transform: rotate(-45deg);
+            }
+            .transform3{
+                transform-origin: right bottom;
+                transform: rotate(-45deg);
+            }
+        </style>
+    </head>
+    <body>
+        <a href="../title.html">Элемент title</a>
+        <div class="overflow">
+            <div class="doubleScale">scale(2)</div>
+            <div></div>
+            <div></div>
+            <div class="rotated">rotate(30deg)</div>
+            <div></div>
+            <div class="halfScale">scale(0.5)</div>
+            <div></div>
+            <div class="scale1">scale(2, 0.5)</div>
+            <div></div>
+            <div class="scale2">scaleX(-1)</div>
+            <div class="translated"></div>
+            <div></div>
+            <div class="skewed"></div>
+            <div></div>
+            <div class="transform1"></div>
+            <div class="transform2"></div>
+            <div class="transform3"></div>
+        </div>
+    </body>
+</html>

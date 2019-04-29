@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Выравнивание плавающих элементов</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            #sidebar{
+                float: left;
+                width: 25%;
+                padding: 10px;
+            }
+            #main{
+                border-left: 1px solid #ccc;
+                width:75%;
+                padding: 15px;
+                margin-left: 25%; 
+            }
+
+            #header{
+                background-color: #eee;
+            }
+            #nav{
+                background-color: #f4f4f4;
+                border-top: 1px solid #ccc;
+                border-bottom: 1px solid #ccc;
+                float:left;
+                width: 100%;
+                clear: both;
+            }
+            #nav ul{
+                margin-left: 0px;
+                padding-left: 0px;
+                list-style: none;
+            }
+            #nav li { 
+                float: left;
+            }
+            #nav ul a {
+                display: block;
+                width: 7em;
+                padding:10px;
+                border-left: 1px solid #ccc;
+                text-decoration: none;
+                color: #333;
+                text-align: center;
+            }
+            #nav ul li:last-child a {
+
+                border-right: 1px solid #ccc;
+            }
+            #nav ul a:hover{
+                background-color: #aaa;
+                color: #f4f4f4;
+            }
+            html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, img, dl, dt, dd, ol, ul, li, form, table, caption, tr, th, td,
+            article, aside, footer, header{
+                margin: 0;
+                padding: 0;
+                border: 0;
+                font-size: 100%;
+                vertical-align: baseline;
+            }
+            .content{
+                clear: both;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="../title.html">Элемент title</a>
+        <div id="sidebar">
+            <h2>The standard Lorem Ipsum passage</h2>
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+                eiusmod tempor incididunt ut labore et dolore...</p>
+        </div>
+        <div id="main">
+            <h2>What is Lorem Ipsum?</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
+            <p>Contrary to popular belief, Lorem Ipsum is not simply random text..</p>
+        </div>
+
+        <div id="header">
+            <h1>Добро пожаловать на сайт</h1>
+            <div id="nav">
+                <ul>
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Блог</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">О сайте</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="content"><p>helo world</p></div>
+    </body>
+</html>

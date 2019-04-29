@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Вложенные плавающие блоки</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            div{
+                margin: 10px;
+                font-size: 20px;
+                border: 1px solid black;
+                height: 80px;
+            }
+            #header{
+                background-color: #ccc;
+            }
+            #sidebar{
+                background-color: #ddd;
+                float: right;
+                width: 150px;
+            }
+            #main{
+                background-color: #fafafa;
+                height: 200px;
+                margin-right: 170px;
+            }
+            #menu{
+                background-color: #ddd;
+                float: left;
+                width: 160px;
+            }
+            #content{
+                background-color: #eee;
+                margin-left: 180px;
+            }
+            #footer{
+                background-color: #ccc;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="../title.html">Элемент title</a>
+        <div id="header">Шапка сайта</div>
+        <div id="sidebar">Правый сайдбар</div>
+        <div id="main">
+            <div id="menu">Меню</div>
+            <div id="content">Основное содержимое</div>
+        </div>
+        <div id="footer">Футер</div>
+    </body>
+</html>

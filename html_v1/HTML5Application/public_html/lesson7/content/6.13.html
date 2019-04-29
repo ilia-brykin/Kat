@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Размеры элементов</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            div.outer{
+                width: 75%;
+                height: 200px;
+                margin: 10px;
+                border: 1px solid #ccc;
+                background-color: #eee;
+            }
+            div.inner{
+                min-width: 200px;
+                width:50%;
+                max-width: 300px;
+                height: 100px;
+                margin: 10px;
+                padding: 10px;
+                border: 1px solid red;
+                background-color: blue;
+                box-sizing: border-box;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="../title.html">Элемент title</a>
+        <div class="outer">
+            <div class="inner"></div>
+        </div>
+    </body>
+</html>

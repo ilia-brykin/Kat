@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Фон элемента</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            div{
+                width: 200px;
+                height: 200px;
+                margin: 20px;
+                padding: 20px;
+                border: 3px solid #ccc;
+                /*overflow: scroll; /*прокрутка*/
+                display: inline-block;
+            }
+            .colored{
+                background-color: red;
+            }
+            .imaged{
+                background-image: url(./../../../../../audio/2.10.jpg);
+                /* background-repeat: round;*/
+                background-size: 200px 150px;
+            }
+            .position{
+                border: 1px solid #ccc;
+                background-color: #eee;
+                background-image: url(./../../../../../audio/2.11.jpg);
+                background-repeat: no-repeat;
+                background-position: 20px 15px; 
+                background-attachment: scroll;
+                background-size: 500px 300px;
+            }
+            /*{background: <background-color> <background-position> <background-size> 
+            <background-repeat> <background-origin> <background-clip> <background-attachment>
+            <background-image>}*/
+        </style>
+    </head>
+    <body>
+        <a href="../title.html">Элемент title</a>
+        <div class="colored">Первый блок</div>
+        <div class="imaged">Второй блок</div>
+        <div class="position">Туман начинал расходиться, и неопределенно, верстах в двух расстояния, виднелись уже 
+            неприятельские войска на противоположных возвышенностях...</div>
+    </body>
+</html>

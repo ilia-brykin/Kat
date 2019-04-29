@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Стилизация шрифтов</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            #one{
+                font-family: Arial;
+            }
+            #three{
+                font-family: "Times New Roman";
+            }
+            #four{
+                font-family: sans-serif;
+            }
+            #five{
+                font-weight: bold;
+            }
+            #two{
+                font-weight: normal;
+            }
+            #six{
+                font-style: italic;
+            }
+            #seven{
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="../title.html">Элемент title</a>
+        <div>
+            <p id="one">
+                Свойство font-family устанавливает семейство шрифтов, которое будет использоваться.
+                Шрифт свойства font-family будет работать, только если у пользователя на локальном компьютере
+                имеется такой же шрифт. По этой причине нередко выбираются стандартные шрифты, которые широко
+                распространены, как Arial, Verdana и т.д.
+            </p>
+            <p id="two">
+                Также нередко применяется практика нескольких шрифтов:
+                font-family: Arial, Verdana, Helvetica;
+                В данном случае основным шрифтом является первый - Arial. Если он на компьютере пользователя не
+                поддерживается, то выбирается второй и т.д.
+            </p>
+            <p id="three">
+                Если название шрифта состоит из нескольких слов, например, Times New Roman, то все название 
+                заключается в кавычки.
+            </p>
+            <p id="four">
+                Кроме конкретных стилей также могут использоваться общие универсальные шрифты, 
+                задаваемые с помощью значений sans-serif и serif. Так, если ни Arial, ни Verdana не
+                поддерживаются на компьютере пользователя, то используется sans-serif - универсальный шрифт 
+                без засечек.
+            </p>
+            <h3>Шрифты в CSS 3</h3>
+            <p id="five">Толщина шрифта
+                Свойство font-weight задает толщину шрифта. 
+                Оно может принимать 9 числовых значений: 100, 200, 300, 400,...900.
+                В реальности чаще для этого свойства используют два значения:
+                normal (нежирный обычный текст) и bold (полужирный шрифт).
+            </p>
+            <p id="six">
+                Курсив
+                Свойство font-style позволяет выделить текст курсивом. Для этого используется значение italic.
+                Если надо отменить курсив, то применяется значение normal.
+            <p id="seven">
+                Цвет шрифта
+                Свойство color устанавливает цвет шрифта.
+            </p>
+        </div>
+    </body>
+</html>

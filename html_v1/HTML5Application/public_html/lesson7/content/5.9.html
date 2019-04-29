@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Псевдоэлементы</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            ::first-letter{
+                color: red;
+                font-size: 25px;
+            }
+            ::first-line{
+                font-size: 20px;
+            }
+            .warning::before{
+                content: "Важно!";
+                font-weight: bold;
+            }
+            .warning::after{
+                content: "Будьте осторожны!";
+                font-weight: bold;
+            }
+            ::selection{
+                color: white;
+                background-color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="../title.html">Элемент title</a>
+        <p>Но он ничего не видал. Над ним не было ничего уже, кроме неба, — высокого неба, не ясного, но все-таки неизмеримо высокого, с тихо ползущими по нем серыми облаками.</p>
+        <p>
+            <span class="warning">Не пытайтесь засунуть язык в электрическую розетку.</span>
+        </p>
+        <p>Пседвоэлементы в CSS3 позволяют форматировать текст.</p>
+    </body>
+</html>

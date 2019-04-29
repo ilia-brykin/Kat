@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Форматирование текста</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            p.capitalize{
+                text-transform: capitalize;
+            }
+            p.lowercase{
+                text-transform: lowercase;
+            }
+            p.uppercase{
+                text-transform: uppercase;
+            }
+            p.under {
+                text-decoration: underline;
+            }
+            p.over {
+                text-decoration: overline;
+            }
+            p.line {
+                text-decoration: line-through;
+            }
+            p.mixed {
+                text-decoration: underline line-through;
+            }
+            p.smallLetterSpace {
+                letter-spacing: -1px;
+            }
+            p.bigLetterSpace {
+                letter-spacing: 1px;
+            }
+            p.smallWordSpace{
+                word-spacing: -1px;
+            }
+            p.bidWordSpace{
+                word-spacing: 1px;
+            }
+            h1{
+                text-shadow:5px 4px 3px #999;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="../title.html">Элемент title</a>
+        <div>
+            <p class="capitalize">Текст использует значение capitalize</p>
+            <p class="lowercase">Текст использует значение lowercase</p>
+            <p class="uppercase">Текст использует значение uppercase</p>
+        </div>
+        <div>
+            <p class="under">Это подчеркнутый текст.</p>
+            <p class="over">Это надчеркнутый текст</p>
+            <p class="line">Это зачеркнутый текст</p>
+            <p class="mixed">Это подчеркнутый и зачеркнутый текст</p>
+        </div>
+        <div>
+            <h3>Обычный текст</h3>
+            <p>Над ним не было ничего уже, кроме неба...</p>
+            <h3>letter-spacing: -1px;</h3>
+            <p class="smallLetterSpace">Над ним не было ничего уже, кроме неба...</p>
+            <h3>letter-spacing: 1px;</h3>
+            <p class="bigLetterSpace">Над ним не было ничего уже, кроме неба...</p>
+            <h3>word-spacing: -1px</h3>
+            <p class="smallWordSpace">Над ним не было ничего уже, кроме неба...</p>
+            <h3>word-spacing: 1px</h3>
+            <p class="bigWordSpace">Над ним не было ничего уже, кроме неба...</p>
+        </div>
+        <h1>Текстовые тени</h1>
+    </body>
+</html>

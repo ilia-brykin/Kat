@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Свойство display</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            span{
+                color: red;
+                width: 100px;
+                height: 30px;
+                background-color: #aaa;
+            }
+            .blockSpan{
+                display: block;
+            }
+            .inline{
+                display: inline;
+            }
+            .inineBlockSpan{
+                display: inline-block;
+            }
+            ul{
+                display: table;
+                margin: 0;
+            }
+            li{
+                list-style-type: none;
+                display: table-cell;
+                padding: 10px;
+            }
+            .invisible{
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="../title.html">Элемент title</a>
+        <div>Это <span>строчный</span> элемент span</div>
+        <div>Это <span class="blockSpan">блочный</span> элемент span</div>
+
+        <div class="inline">Первый строчный элемент div.</div>
+        <div class="inline">Второй строчный элемент div.</div>
+
+        <p>Проехав с полверсты в хвосте <span>колонны</span>, он остановился</p>
+        <p>Проехав с полверсты в хвосте <span class="inineBlockSpan">колонны</span>, он остановился</p>
+
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+        <p>Первый параграф</p>
+        <p class="invisible">Второй параграф</p>
+        <p>Третий параграф</p>
+    </body>
+</html>

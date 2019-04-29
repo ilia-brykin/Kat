@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Псевдоклассы форм</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            :enabled{
+                border: 2px black solid;
+                color: red;
+            }
+            :checked + span{
+                color: red;
+                font-weight: bold;
+            }
+            :default{
+                border: 2px red solid;
+            }
+            input:invalid{
+                border: 2px red solid;
+            }
+            input:valid{
+                border: 2px green solid;
+            }
+            :in-range{
+                border: 2px green solid;
+            }
+            :out-of-range{
+                border: 2px red solid;
+            }
+            :required{
+                color: blueviolet;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="../title.html">Элемент title</a>
+        <p><input type="text" value="Enabled"></p>
+        <p><input type="text" value="Disabled" disabled></p>
+
+        <h2>Выберите технологию</h2>
+        <p><input type="checkbox" checked name="html5"><span>HTML5</span></p>
+        <p><input type="checkbox" name="dotnet"><span>.NET</span></p>
+        <p><input type="checkbox" name="java"><span>Java</span></p>
+        <h2>Укажите пол</h2>
+        <p><input type="radio" value="man" checked name="gender"><span>мужской</span></p>
+        <p><input type="radio" value="woman" name="gender"><span>женский</span></p>
+        
+        <form>
+            <p>
+                <label for="age">Возраст:</label>
+                <input type="number" min="1" max="100" id="age" name="age">
+            </p>
+            <p><input type="text" name="login" placeholder="Введите логин" required></p>
+            <p><input type="password" name="password" placeholder="Введите пароль" required></p>
+            <input type="submit" value="Войти">
+        </form>
+    </body>
+</html>
