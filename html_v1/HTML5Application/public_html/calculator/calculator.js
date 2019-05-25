@@ -24,13 +24,16 @@ function onButtonsSymbol(symbol) {
     // }
 }
 
-function getResult() {
+function getResult(symbol) {
   var tempNumber;
   try {
     tempNumber = eval(globalNumber);
-    // код ...
-
-  } catch (error) {
+   // globalNumber = globalNumber.substring(globalNumber.length - 2);
+    if (symbol === '+' || '-' || '*' || '/'){
+     globalNumber = globalNumber.substring(globalNumber.length - 2);  
+    }
+  } 
+  catch (error) {
     console.log("error", error);
     // обработка ошибки
     return;
@@ -38,4 +41,9 @@ function getResult() {
   globalNumber = tempNumber;
   globalResult.innerText = globalNumber;
   console.log("globalNumber", );
+}
+
+function clearResult(){
+ globalNumber = globalNumber.slice(0, -1); 
+ globalResult.innerText = globalNumber;
 }
